@@ -1,0 +1,91 @@
+/* 🌈 Background Gradient */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    padding-top: 40px;
+}
+
+/* ❄ Frosted Glass Board */
+.board {
+    width: 350px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px auto;
+    gap: 12px;
+
+    /* Glassmorphism effects */
+    background: rgba(255, 255, 255, 0.25);
+    padding: 25px;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+/* ❄ Frosted Cells */
+.square {
+    width: 100px;
+    height: 100px;
+
+    /* Glass effect */
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+.square:hover {
+    background: rgba(255, 255, 255, 0.55);
+    transform: scale(1.08);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+/* 🎀 Message + UI text */
+.setup {
+    margin: 20px;
+}
+
+#message {
+    font-size: 1.4rem;
+    margin-top: 15px;
+    height: 30px;
+    font-weight: bold;
+    color: #fefdff;
+}
+
+/* ✨ X and O colors (optional aesthetic) */
+.x {
+    color: #c084fc;          /* lavender */
+    text-shadow: 0 0 8px rgba(192, 132, 252, 0.5);
+}
+
+.o {
+    color: #6ecfcf;          /* mint teal */
+    text-shadow: 0 0 8px rgba(110, 207, 207, 0.5);
+}
+
+/* Highlight winners */
+.win {
+    background: rgba(120, 217, 241, 0.7) !important;
+    border-color: rgba(255, 180, 255, 0.8);
+    box-shadow: 0 0 20px rgba(255, 160, 240, 0.6) !important;
+    transform: scale(1.12);
+}
+input::placeholder{
+    color: #fed6e3;
+    opacity: 1;
+}
+
+textarea::placeholder{
+    color: aliceblue;
+}
